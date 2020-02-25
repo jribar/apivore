@@ -4,7 +4,7 @@ module Apivore
   class SwaggerChecker
     PATH_TO_CHECKER_MAP = {}
 
-    def self.instance_for(path, base_path: nil)
+    def self.instance_for(path, base_path = nil)
       PATH_TO_CHECKER_MAP[path] ||= new(path, base_path: base_path)
     end
 
